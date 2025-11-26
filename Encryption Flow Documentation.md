@@ -200,7 +200,6 @@ AES encryption takes three inputs: a key K, an initialization vector IV, and pla
 
 AES decryption takes the same key K and initialization vector IV, along with ciphertext C, and produces the original plaintext P through the decryption function D.
 
----
 
 ## DETAILED WORKFLOW
 
@@ -230,7 +229,6 @@ Step 11: User A removes the PKCS7 padding and converts the decrypted bytes back 
 
 Step 12: The original message is successfully recovered and saved to decrypted_message.txt.
 
----
 
 ## CRYPTOGRAPHIC SPECIFICATIONS
 
@@ -263,7 +261,6 @@ Step 12: The original message is successfully recovered and saved to decrypted_m
 - Key Storage: Keys should never be stored in plain text
 - Key Transmission: Only encrypted keys should be transmitted
 
----
 
 ## SECURITY CONSIDERATIONS
 
@@ -297,7 +294,6 @@ The implementation uses well-established cryptographic libraries:
 - Proper padding schemes
 - Secure random number generation
 
----
 
 ## COMPARISON WITH OTHER SYSTEMS
 
@@ -325,7 +321,6 @@ RSA is computationally expensive and has message size limitations. RSA-2048 can 
 
 AES requires both parties to share a secret key. Without a secure channel, sharing this key is problematic. RSA solves the key distribution problem.
 
----
 
 ## CONCLUSION
 
@@ -333,7 +328,3 @@ This hybrid encryption system demonstrates how modern cryptography combines diff
 
 The system provides confidentiality through strong encryption algorithms, but does not provide authentication or integrity guarantees. For production use, additional security measures such as digital signatures and message authentication codes should be implemented.
 
----
-
-Document Version: 1.0
-Last Updated: November 2025
